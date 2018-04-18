@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--头-->
+    <LinearLayout
+        android:background="#ff0000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/main_top"
+            />
+    </LinearLayout>
+    <!--中-->
+    <FrameLayout
+        android:layout_weight="10"
+        android:id="@+id/mian_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent" />
+    </FrameLayout>
+    <!--尾-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <include
+        layout="@layout/main_bottom"/>
+    </LinearLayout>
+
+
+</LinearLayout>
